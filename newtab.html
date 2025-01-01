@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Links Tab</title>
+        <style>
+            body {
+                font-family: "Noto Sans", Arial, sans-serif;
+                font-size: 20px;
+                margin: 20px;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+            input {
+                padding: 5px;
+                width: 300px;
+            }
+            button {
+                margin-left: 10px;
+                padding: 5px;
+            }
+            #controls {
+                margin-top: 20px;
+                font-size: 14px;
+                color: #007bff;
+            }
+
+            #controls a, #controls label {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            #controls input[type="file"] {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Links</h1>
+        <ul id="link-list"></ul>
+        <input type="text" id="new-link" placeholder="Add a new link and press Enter">
+
+        <div id="controls">
+            <a href="#" id="export-links">Export</a> |
+            <label for="import-file" style="   cursor: pointer; text-decoration: underline;">Import</label>
+            <input type="file" id="import-file" accept=".json" style="   display: none;">
+        </div>
+
+        <script src="newtab.js"></script>
+    </body>
+</html>
